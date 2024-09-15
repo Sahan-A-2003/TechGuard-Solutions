@@ -1,0 +1,709 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+body{
+  margin-top: 110px ;
+  font-size: 22px;
+}
+
+#body{
+  background-color: black;
+}
+
+.main{
+  padding-top: 110px;
+}
+
+.head-tital{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.head-tital img{
+  width: 100%;
+  height: 600px;
+  
+}
+
+.head-name{
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  font-size: 100px;
+  width: 100%;
+  padding: 10px 0px;
+  width: 100%;
+  color: seashell;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+  background-color: rgb(85, 80, 80,0.6);
+  cursor: pointer;
+}
+
+.mini-bar{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 900px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar{
+  width: 700px;
+  height: 60px;
+  border: none;
+  border-radius: 30px;
+  padding-left: 30px;
+}
+
+.mini-bar button{
+  padding: 0px 30px;
+  height: 60px;
+  border: none;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-left: -30px;
+  background-color: rgb(232, 226, 226);
+  cursor: pointer;
+}
+
+@media screen and (max-width:950px){
+  .head-name{
+    font-size: 80px;
+  }
+
+  .mini-bar{
+    top:60%;
+    width: 700px;
+  }
+  
+}
+
+@media screen and (max-width:450px){
+  .head-name{
+    font-size: 30px;
+  }
+
+  .mini-bar{
+    top:60%;
+    width: 200px;
+  }
+
+  .search-bar{
+    width: 250px;
+    height: 40px;
+  }
+
+  .mini-bar button{
+    height: 40px;
+    border: none;
+    width: 80px;
+    position: relative;
+  }
+
+  .mini-bar button svg{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 5px;
+    left:10px;
+    right:10px;
+    bottom:5px;
+  }
+}
+
+/* about us */
+
+.about-us{
+  max-width: 100%;
+  /* background-image: url(images/about\ us\(copy\).jpg);
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat; */
+  margin: 50px 100px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.content-about-us{
+  /* margin: 20px 0px 0px 50px;
+  width: 1100px;
+  background-color: rgb(240, 255, 240,0.6);
+  padding: 30px 50px;
+  border-radius: 20px; */
+}
+
+.content-about-us h1{
+  font-size:60px;
+  text-decoration: 3px underline black;
+  text-align: left;
+  margin-bottom:10px;
+
+}
+
+.content-about-us p{
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+@media screen and (max-width:950px) {
+  
+  .about-us{
+    padding: 10px ;
+  }
+  .content-about-us h1{
+    font-size: 50px;
+  }
+  
+  .content-about-us p{
+    line-height: 1.2;
+    font-weight: 550;
+  }
+}
+
+@media screen and (max-width:450px){
+
+  .about-us{
+    margin: 10px ;
+  }
+}
+
+/* leaders section */
+
+.leaders{
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  margin: 40px 0px;
+  margin-top: 30px;
+  color: rgba(255, 255, 255, 0.864);
+}
+
+.leader-bord{
+padding-top: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.leaders h1{
+  font-size: 50px;
+  text-decoration: underline;
+  text-align: center;
+  padding: 20px 0px;
+  width: 100%;
+  background-image: linear-gradient(to right,rgba(234, 228, 236, 0.7) 0%,rgba(0, 0, 0, 0.6)100%);
+  border: none;
+  box-shadow: 1px 2px 1px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+
+.leaders img{
+  width: 350px;
+  margin: 30px 70px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.founder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid white;
+
+}
+
+.coo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid white;
+
+}
+
+.cto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leader-info{
+  line-height: 1.5;
+  margin-right: 3ch;
+  cursor: pointer;
+}
+
+.leader-info h2{
+  font-size: 45px;
+  text-decoration: underline red;
+  cursor: pointer;
+}
+
+.leader-info h3{
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width:750px) {
+  .leader-bord{
+    padding-top: 20px;
+    display: block;
+  }
+
+  .founder{
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin: 0px 10px;
+    margin-bottom: 30px;
+  }
+
+  .coo{
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin: 0px 10px;
+    margin-bottom: 30px;
+  }
+  
+  .cto{
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin: 0px 10px;
+  }
+
+  .leaders img{
+    margin: 0;
+  }
+}
+
+@media screen and (max-width:450px){
+  
+  .leaders{
+    text-align: center;
+    font-size: 16px;
+    
+  }
+ 
+  .founder{
+    display: block;
+  }
+
+  .leaders h1{
+    font-size: 40px;
+    text-decoration: underline;
+    text-align: center;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 0px;
+    width: 100%;
+    box-shadow: 1px 2px 1px rgba(0,0,0,0.5);
+
+  }
+
+  .leaders img{
+    margin: 0px;
+    margin-top: 10px;
+  }
+
+  .leaders img{
+    width: 350px;
+    text-align: centemar;
+    border-radius: 10px;
+  }
+
+  .leader-info h2{
+    font-size: 35px;
+    text-decoration: underline red;
+  }
+  
+  .leader-info h3{
+    font-size: 25px;
+  }
+
+  .coo{
+    display: block;
+    border-bottom: 2px solid black;
+  }
+  
+  .cto{
+    display:block;
+  }
+
+  .leader-info p{
+    margin: 5px 10px;
+    padding-bottom: 10px;
+  }
+}
+
+/* partnerships companies */
+
+.partnerships-companies{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap:10px;
+  padding: 10px 40px;
+  background-color: rgba(5, 5, 5);
+  color: aliceblue;
+}
+
+
+.partnerships-companies h1{
+  font-size: 50px;
+  text-decoration: underline;
+  text-align: center;
+  line-height: 1.5;
+  padding: 20px 0px;
+  grid-area:1 / span 6;
+  color: aliceblue;
+  background-image: linear-gradient(to right,rgba(234, 228, 236, 0.7) 0%,rgba(0, 0, 0, 0.6)100%);
+  border: none;
+  box-shadow: 1px 2px 1px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+
+.partners-1{
+  grid-area: 2 / 1 / 4 / 3;
+  border: 2px solid black;
+  background-image: url(images/pratner\ 01.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+
+}
+
+.partners-2{
+  grid-area: 2 / 4 / 3 / 6;
+  background-image: url(images/partner\ 02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 300px;
+}
+
+.partners-3{
+  grid-area:  3/ 4 / 4 / 6;
+  background-image: url(images/partner\ 03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.partners-4{
+  grid-area: 4 / 1 / 6 / 6; 
+  background-image: url(images/partner\ 04.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+.intel-s{
+background-color: rgba(0, 0, 0, 0.4);
+margin-top: 70%;
+padding: 20px 30px;
+font-size: 22px;
+color: seashell;
+cursor: pointer;
+}
+
+.intel-s h3{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 35px;
+  text-decoration: underline red;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.intel-s p{
+  font-weight: 600;
+  
+}
+
+.cisco-s{
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 16%;
+  padding: 20px 30px;
+  font-size: 22px;
+  color: seashell;
+  cursor: pointer;
+  }
+  
+.cisco-s h3{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 35px;
+  text-decoration: underline red;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.cisco-s p{
+  font-weight: 600;
+  
+}
+
+.ibm-s{
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 16%;
+  padding: 20px 30px;
+  font-size: 22px;
+  color: seashell;
+  cursor: pointer;
+  }
+  
+.ibm-s h3{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 35px;
+  text-decoration: underline red;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.ibm-s p{
+  font-weight: 600;
+  
+}
+  
+.accenture{
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 32%;
+  padding: 21px 30px;
+  font-size: 22px;
+  color: seashell;
+  cursor: pointer;
+  }
+  
+.accenture h3{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 35px;
+  text-decoration: underline red;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.accenture p{
+  font-weight: 600;
+  
+}
+
+
+@media  screen and (max-width:950px) {
+  .intel-s{
+    margin-top: 91%;
+    padding: 20px 20px;
+    font-size: 20px;
+  }
+
+  .intel-s p{
+    font-weight: 500;
+    
+  }
+
+  .cisco-s{
+    margin-top: 20%;
+    padding: 20px 20px;
+    font-size: 20px;
+  }
+
+  .cisco-s p{
+    font-weight: 500;
+    
+  }
+
+  .ibm-s{
+    margin-top: 12%;
+    padding: 20px 20px;
+    font-size: 20px;
+  }
+
+  .ibm-s p{
+    font-weight: 500;
+    
+  }
+
+  .accenture{
+    margin-top: 52%;
+    padding: 20px 20px;
+    font-size: 20px;
+  }
+
+  .accenture p{
+    font-weight: 500;
+    
+  }
+}
+
+
+@media  screen and (max-width:450px){
+  .partnerships-companies{
+    margin-top: 10px;
+    display:block;
+    padding: 10px 0px;
+  }
+
+  .partners-2{
+    margin-top: 10px;
+    position: relative;
+  }
+
+  .cisco-s{
+    position: absolute;
+    bottom: 0;
+  }
+
+  .partners-3{
+    margin-top: 10px;
+    position: relative;
+  }
+
+  .ibm-s{
+    position: absolute;
+    bottom: 0;
+  }
+
+  .partners-4{
+    margin-top: 10px;
+    position: relative;
+  }
+
+  .accenture{
+    position: absolute;
+    bottom: 0;
+  }
+}
+  
+
+/* Footer */
+
+.footer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0;
+  background-color: rgb(177, 125, 29);
+  color: black;
+}
+
+.company-footer{
+  grid-template: 1 / 2;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+
+.company-footer img{
+  width: 250px;
+  cursor: pointer;
+}
+
+.company-footer h1{
+  margin: 1px 0px;
+  font-size: 32px;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.company-footer p{
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 20px;
+  cursor: pointer;
+}
+
+.foooter-icon{
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 50px 0px;
+  margin-top: 80px;
+  
+}
+
+.footer-content{
+  margin-top: 80px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.footer-content p{
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.footer-menu ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding-bottom: 30px;
+}
+
+.footer-menu ul a{
+  color: seashell;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media screen and (max-width:950px) {
+  .footer-menu ul a{
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width:750px) {
+  .footer{
+    display: block;
+  }
+  
+  .company-footer{
+    width: 100%;
+  }
+
+  .footer-menu ul{
+    padding: 0px 5px 30px 5px;
+  }
+
+}
+
+@media screen and (max-width:450px) {
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .company-footer{
+    width: 100%;
+  }
+
+  .footer-menu ul a{
+    color: seashell;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px 0px;
+  }
+
+  .right-footer{
+    display: block;
+  }
+}
